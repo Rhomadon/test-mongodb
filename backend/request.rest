@@ -1,0 +1,31 @@
+GET http://localhost:5000/products
+
+###
+
+GET http://localhost:5000/products/62244c4e5df4ae31b358e2d7
+
+###
+
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "title": "Product 2",
+    "price": "3000",
+    "status": "Sold Out"
+}
+
+###
+
+PATCH http://localhost:5000/products/62244c4e5df4ae31b358e2d7
+Content-Type: application/json
+
+{
+    "title": "Product up",
+    "price": "3500",
+    "status": "Sold Out"
+}
+
+###
+
+DELETE http://localhost:5000/products/62244c4e5df4ae31b358e2d7
